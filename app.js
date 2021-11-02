@@ -17,6 +17,7 @@ function submitHandler(){
 
 
 
+
 }
 
 function calculateProfitAndLoss(initial,quantity,current){
