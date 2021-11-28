@@ -1,8 +1,72 @@
-body{
-    text-align: center;
-    background-color: ;
+#container{
+    margin: auto;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+     width: 30vw;
+    
 }
-label{
+#initial-price{
+    /* max-width: 40%; */
+    padding: 1rem;
+    border: solid black;
+    border-radius: 1rem;
     display: block;
-    padding-bottom: 1rem;
+    margin-bottom: 20px;
+}
+#initial{
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding: 30px 10px;
+    cursor: pointer;
+ 
+
+}
+#stocks-quantity{
+    /* max-width: 60%; */
+    padding: 1rem;
+    border: solid black;
+    border-radius: 1rem;
+    display: block;
+    font-family: 25px;
+    margin-bottom: 20px;
+}
+
+#current-price{
+    /* max-width: 60%; */
+    padding: 1rem;
+    border: solid black;
+    border-radius: 1rem;
+    display: block;
+}
+#quantity{
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding: 30px 10px;
+    cursor: pointer;
+ 
+
+}
+#current{
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding: 30px 10px;
+    cursor: pointer;
+ 
+}
+body{
+    background-color: cadetblue;
+}
+#submit-btn{
+    width: 80px;
+    height: 50px;
+    margin:20px 55px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: chocolate;
+    font-weight: bolder;
+    /* padding-left: 20px; */
+}
+#output-box{
+    font-size: 25px;
 }
