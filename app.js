@@ -44,9 +44,13 @@ var outputBox=document.querySelector('#output-box');
 submitBtn.addEventListener("click",calculate);
 
 function calculate(){
+     
+
+
      var costPrice=(initialPrice.value * stocksQuantity.value);
      var sellingPrice=(currentPrice.value *stocksQuantity.value);
-     if(costPrice<sellingPrice){
+    if(costPrice>=0 && sellingPrice>=0){ 
+   if(costPrice<sellingPrice){
          var profit=sellingPrice - costPrice;
          var profitPercentage = (profit/costPrice)*100;
          outputBox.innerText="It's a profit of "+ profit +" and the profit percentage is " 
@@ -64,4 +68,11 @@ function calculate(){
         else{
             outputBox.innerText="No pain NO gain"
         }
-}
+     } 
+     else{
+         outputBox.innerText="Stock price cannot be negative";
+     }
+
+    }
+
+        
